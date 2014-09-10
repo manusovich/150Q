@@ -9,10 +9,8 @@ import java.util.HashSet;
  * Created by Alex Manusovich on 9/10/14.
  */
 public class Task1 {
-    public static final String IN[] = {"ei9hr318r", "1", "", "howqfih", "wvfsr63g"};
 
-
-    public static boolean isAllUnique1(String input) {
+    public static boolean isAllUnique1(final String input) {
         if (input == null || input.length() == 0) {
             return false;
         }
@@ -24,8 +22,7 @@ public class Task1 {
         return hashSet.size() == c;
     }
 
-
-    public static boolean isAllUnique2(String input) {
+    public static boolean isAllUnique2(final String input) {
         if (input == null || input.length() == 0) {
             return false;
         }
@@ -40,10 +37,8 @@ public class Task1 {
         return true;
     }
 
-    public static void main(String... p) {
-        for (String input : IN) {
-            System.out.println(String.format("1. %s = %s", input, isAllUnique1(input)));
-            System.out.println(String.format("2. %s = %s", input, isAllUnique2(input)));
-        }
+    public static boolean isAllUnique(final String input) {
+        return isAllUnique1(input) && isAllUnique2(input);
     }
+
 }
