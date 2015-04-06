@@ -1,4 +1,4 @@
-package com.manusovich.q150.chapter2;
+package com.manusovich.q150.common;
 
 /**
  * Created by Alex Manusovich on 4/4/15.
